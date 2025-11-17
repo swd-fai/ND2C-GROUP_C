@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            background-color: rgb(185, 163, 163);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .calc{
+            background: #5e0c0c;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .member{
+            background: #e94d39;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+        .calc form input{
+            border: 0;
+            outline: 0;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            margin: 12px;
+            background: transparent;
+            color: #fff;
+            box-shadow: -1px -1px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        } form .display{
+            display: flex;
+            justify-content: flex-end;
+            margin: 20px 0;
+        }
+        form .display input{
+            text-align: right;
+            flex: 1;
+            font-size: 45px;
+        }
+        form input.suhail{
+            width: 137px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <header></header>
+       
+        <div class="main">
+            <div class="members" style="
+                background: #550707;
+            padding: 20px;
+            border-radius: 10px;
+                ">
+                <div class="enter" style="">
+                    <h1 style="text-align: center;">GROUP C</h1><br><br>
+                    <label for="" ><li>MUBARAK AMINU<Label style="color: white;text-align: end;">ND/COM/23/0160</Label></li> </label><br>
+                <label for=""><li>SADIK ABDULAHI<Label style="color: white;text-align: end;">ND/COM/23/0103</Label></li></label><br>
+                <label for=""><li>ABDULLAHI HASHIMU<Label style="color: white;text-align: end;">ND/COM/23/0013</Label></li></label><br>
+                <label for=""><li>MUBARAK SALEH <Label style="color: white;text-align: end;">ND/COM/23/0217</Label></li></label><br>
+                <label for=""><li>AMINA NURA<Label style="color: white;text-align: end;">ND/COM/23/0098</Label></li></label><br>
+                <label for=""><li>RABI'ATU ABUBAKAR<Label style="color: white;text-align: end;">ND/COM/23/0099</Label></li></label><br>
+                <label for=""><li>KABIR ABUBAKAR<Label style="color: white;text-align: end;">ND/COM/23/0122</Label></li></label><br>
+                <label for=""><li>MUHAMMAD AWAISU<Label style="color: white;text-align: end;">ND/COM/23/0178</Label></li></label><br>
+                <label for=""><li>IBRAHIM IDRIS<Label style="color: white;text-align: end;">ND/COM/23/0004</Label></li></label><br>
+                <label for=""><li>NURA AHMAD<Label style="color: white;text-align: end;">ND/COM/23/0126</Label></li></label><br>
+                
+                </div>
+
+
+            </div><br>
+            <div class="calc">
+                <form>
+                    <div class="display">
+                        <input type="text" name="display" style="height: 60px;
+                        width: 60px;
+                        border-radius: 10px;">
+                    </div>
+                    <div>
+                        <input type="button" value="AC"style="border-radius: 10px; background-color: red;"  onclick="display.value = '' ">
+                        <input type="button" value="DEL"style="border-radius: 10px; background-color: black;" onclick="display.value = display.value.toString().slice(0,-1)">
+                        <input type="button" value="."style="border-radius: 10px;" onclick="display.value += '.' ">
+                        <input type="button" value="/"style="border-radius: 10px;" onclick="display.value += '/' ">
+                    </div>
+                    <div>
+                        <input type="button" value="7" onclick="display.value += '7' ">
+                        <input type="button" value="8" onclick="display.value += '8' ">
+                        <input type="button" value="9" onclick="display.value += '9' ">
+                        <input type="button" value="x"style="border-radius: 10px;" onclick="display.value += '*' ">
+                    </div>
+                    <div>
+                        <input type="button" value="4" onclick="display.value += '4' ">
+                        <input type="button" value="5" onclick="display.value += '5' ">
+                        <input type="button" value="6" onclick="display.value += '6' ">
+                        <input type="button" value="-"style="border-radius: 10px;" onclick="display.value += '-' ">
+                    </div>
+                    <div>
+                        <input type="button" value="1" onclick="display.value += '1' ">
+                        <input type="button" value="2" onclick="display.value += '2' ">
+                        <input type="button" value="3" onclick="display.value += '3' ">
+                        <input type="button" value="+"style="border-radius: 10px;" onclick="display.value += '+' ">
+                    </div>
+                    <div>
+                        <input type="button" value="00" onclick="display.value += '00' ">
+                        <input type="button" value="0" onclick="display.value += '0' ">
+                        <input type="button" value="="  class="suhail" style="border-radius: 10px; background-color: rgba(7, 158, 40, 0.849)" onclick="display.value =eval(display.value)">
+                        
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>
